@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --fondo: #FFFFF7;
+    --azul: #12172A;
+    --azul-claro: #2C54B0;
+    --amarillo: #FFCC00;
+    --rojo: #BE202F;
+}
+html{
+    scroll-behavior: smooth;/*Para links suabes (botones de subir y bajar)*/
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(../media/background.jpg);
+}
+a{
+    text-decoration:none;
+}
+
+
+
+/*-^-^-^-^-^-^-^ HEADER -^-^-^-^-^-^-^-^*/
+header{
+    padding: 1rem 0 3rem 0;
+    background-color: var(--fondo);
+    
+}
+#logo{
+    background-image: url(../media/logo.svg);
+    width: 100%;
+    height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/*-^-^-^-^-^-^-^-^ NAV -^-^-^-^-^-^-^-^*/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: var(--azul);
+    color: white;
+    padding: 1rem 0;
+}
+nav > input{
+    font-size: 2rem;
+
+}
+nav > button{
+    font-size: 2rem;
+    color: var(--fondo);
+    text-decoration: none;
+    padding: 0 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#error{
+    font-size: 1.5rem;
+    color: var(--rojo);
+    border: .2rem solid;
+    padding: 1rem 2rem;
+    display: none;
+}
+
+
+
+/*-^-^-^-^-^-^-^-^ MAIN -^-^-^-^-^-^-^-^*/
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 20rem;
+    margin: 2rem 10rem;
+    gap: 2rem;
+}
+.card{
+    border-radius: 1rem;
+    box-shadow: 0 0 7px black;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+.card__img{
+    width: 50%;
+    height: 60%;
+    object-fit: contain;
+}
+.card__id{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(56, 56, 56);
+}
+.card__nombre{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+}
+
+
+
+
+/*-^-^-^-^-^-^-^-^ ASIDE -^-^-^-^-^-^-^-^*/
+#flechas{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.flecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    border: .2rem solid var(--azul);
+    margin: .5rem;
+    color: var(--azul);
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+
+/*-^-^-^-^-^-^-^-^ FOOTER -^-^-^-^-^-^-^-^*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mas{
+    font-size: 1.5rem;
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--amarillo);
+    color: var(--azul-claro);
+    font-weight: 900;
+    border: 3px solid;
+    margin-bottom: 3rem;
+}
+
+
+@media (max-width: 1050px){
+    main{
+        grid-auto-rows: 15rem;
+    }
+}
+
+@media (max-width: 850px){
+    #logo{
+        background-size: 90%;
+    }
+    .card{
+        grid-column: span 6;
+    }
+    nav{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 670px){
+    .card{
+        grid-column: span 12;
+    }
+    nav{
+        font-size: 1rem;
+    }
+    nav > input{
+        font-size: 1rem;
+    }
+    main{
+        margin: 2rem 3rem;
+    }
+}
+
+@media (max-width: 460px){
+    .card{
+        grid-column: 3/11;
+    }
+    nav{
+        font-size: .8rem;
+
+    }
+    nav > input{
+        font-size: 1rem;
+    }
+    main{
+        margin: 1rem 0;
+    }
+}

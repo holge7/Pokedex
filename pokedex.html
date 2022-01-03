@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/pokedex.css">
+    <script type="module" src="./src/pokedexMain.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <button id="atras">
+            <i class="far fa-arrow-alt-circle-left"></i>
+        </button>
+    </nav>
+    <div id="wrapper">
+
+        <div id="pokedex">
+
+            <!--        MARCO left      -->
+            <div id="pokedex__marco-left">
+                <!--    DECORADO 1  -->
+                <div id="pokedex__left-decorado1">
+                    <div id="pokedex__decorado1-1">
+                        <div></div>
+                    </div>
+                    <div class="pokedex__decorado1" id="pokedex__decorado1-2"></div>
+                    <div class="pokedex__decorado1" id="pokedex__decorado1-3"></div>
+                    <div class="pokedex__decorado1" id="pokedex__decorado1-4"></div>
+                </div>
+
+                <!--        PANTALLA POKEDEX        -->
+                <div id="pokedex__pantalla">
+                    <div class="pokedex__pantalla-decorado1">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="pokedex__pantalla-interior">
+                        <img id="pokedex__pantalla-pokemon" src="" alt="">
+                        <div id="pokedex__pantalla-datos">
+                            <p id="pokedex__pantalla-id"></p>
+                            <div>
+                                <i class="fas fa-mars"></i>
+                                <i class="fas fa-venus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pokedex__pantalla-decorado2">
+                        <div></div>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+
+                <!--    DECORADO 2      -->
+                <div id="pokedex__left-decorado2">
+                    <div id="decorado2-nombre"></div>
+                    <div id="decorado2-btn1">
+                        <div>
+                            <div class="decorado2__btn1-circulo"></div>
+                        </div>
+                        <div>
+                            <div class="decorado2__btn1-circulo"></div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div id="decorado2-cruzeta">
+                        <div class="cruzeta">
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                        <div class="cruzeta">
+                            <i class="fas fa-caret-left"></i>
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--    MARCO RIGHT     -->
+            <div id="pokedex__marco-right">
+                <p id="right__texto"></p>
+                <div id="right__numeros">
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <div id="numero-select1" class="numeros-select"></div>
+                    <div id="numero-select2" class="numeros-select"></div>
+                </div>
+                <div id="right__tipo">
+                    <div id="tipos">
+                        <p id="tipo1" class="tipo"></p>
+                        <p id="tipo2" class="tipo"></p>
+                    </div>
+                    <div id="tipo-boton"></div>
+                </div>
+                <div id="right__medidas">
+                    <p id="medidas__alto"></p>
+                    <p id="medidas__peso"></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
